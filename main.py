@@ -45,7 +45,7 @@ current_mode = "stocks"  # Initial mode
 
 def show_stocks():
     neopixel.fill((0, 0, 0))
-    stock_url = "https://api.tiingo.com/tiingo/daily/AAPL/prices?token=9eb25974d78a1b0a4f7804d0aaeaa405e01c6ae0"
+    stock_url = "https://api.tiingo.com/tiingo/daily/AAPL/prices?token=(YOUR TOKEN GOES HERE)"
     percentage_change = get_stock_change(stock_url)["percent"]
     display_percentage_difference(neopixel, percentage_change)
     stock_stats = f"{formatted_date} {get_stock_change(stock_url)["data"]}"
@@ -111,3 +111,4 @@ while True:
         last_button_state = False  # Reset last button state when button is released
     time.sleep(0.1)  # Small delay to reduce CPU usage
     
+
