@@ -1,3 +1,5 @@
+# IMPORTANT: Replace placeholders with your actual credentials.
+# Do NOT commit real values to git.
 import urequests
 import time
 import network
@@ -10,7 +12,7 @@ def connect():
     # Connect function from https://projects.raspberrypi.org/en/projects/get-started-pico-w/2
     wlan = network.WLAN(network.STA_IF)
     wlan.active(True)
-    wlan.connect(ssid, password)
+    wlan.connect(ssid, Password)
 
     while wlan.isconnected() == False:
         print('Waiting for connection...')
