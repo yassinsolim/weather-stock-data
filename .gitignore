@@ -1,0 +1,6 @@
+*.pyc
+__pycache__/
+*.mpy
+credentials.py
+secrets.py
+config_local.py
